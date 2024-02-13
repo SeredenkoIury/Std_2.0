@@ -1,2 +1,3 @@
-﻿Console.WriteLine("Hello world");
+﻿Console.WriteLine("Hello world, hope that ur allright");
+
 
