@@ -1,3 +1,8 @@
-﻿Console.WriteLine("Hello world, hope that ur allright");
+﻿Console.Clear();
+
+//Console.WriteLine("Hello world");
+
+int value = 100;
+Console.WriteLine(value);
 
 
