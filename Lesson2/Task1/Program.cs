@@ -1,5 +1,5 @@
 ﻿Console.Clear();
-Console.WriteLine("Lesson 1, Task 1");
+Console.WriteLine("Lesson 2, Task 1");
 Console.WriteLine("");
 
 int[] arr = new int[5]; // Создали массив из целых чисел из 5 жлементов с именем arr
