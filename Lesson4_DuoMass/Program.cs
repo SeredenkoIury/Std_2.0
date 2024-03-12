@@ -16,7 +16,7 @@ Console.WriteLine("");
 
 
 
-//=================================================================================== Task 01
+//=================================================================================== Task 01.1
 // Необходимо создать двумерный массив с размерами 3 х 5, состоящий
 // из целых чисел и вывести его на экран
 
@@ -55,4 +55,39 @@ Console.WriteLine("");
 // ShowMatrix(matrix);
 
 
-//=================================================================================== Task 01
+//=================================================================================== Task 01.2
+// Необходимо создать двумерный массив с размерами 3 х 5, состоящий
+// из целых чисел и вывести его на экран
+
+//=========================== FUNCTIONS =======================
+
+int[,] CreateMatrix(int rowCount, int columsCount)
+{
+
+    int[,] matrix = new int[rowCount, columsCount];
+    for (int i = 0; i < matrix.GetLength(0); i = i + 1)
+    {
+        for (int j = 0; j < matrix.GetLength(1); j = j + 1)
+        {
+            matrix[i, j] = new Random().Next(1, 11); // from 1 to 10 included
+        }
+    }
+    return matrix;
+}
+
+void ShowMatrix(int[,] matrix)
+{
+        for (int i = 0; i < matrix.GetLength(0); i = i + 1)
+        {
+            for (int j = 0; j < matrix.GetLength(1); j = j + 1)
+            {
+                Console.Write($"{matrix[i, j]}\t");
+            }
+            Console.WriteLine("");
+        }
+}
+
+//=========================== MAIN =======================
+
+int[,] matrix = CreateMatrix(5,15);
+ShowMatrix(matrix);
